@@ -1,9 +1,13 @@
 import React from 'react'
 import Profile from './Profile'
+import Teststyle from './Teststyle'
 
-const User = () => {
+const User = (props) => {
+  setInterval(User, 1000);
   return (
     <div>
+      <h1>hey user your data is here {props.data2}</h1>
+      <Teststyle date={new Date()}/>
       <Profile
       size={100}
       person={{ 
@@ -23,6 +27,7 @@ const User = () => {
         imageId: 'YfeOqp2'
       }}/>
     </div>
+    
   )
 }
 
