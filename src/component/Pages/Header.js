@@ -3,18 +3,18 @@ import React from 'react'
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {favoritecolor: "red"};
+    this.state = {favoritecolor: "yellow"};
 
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({favoritecolor: "yellow"})
+    setInterval(() => {
+      this.setState({favoritecolor: "red"})
     }, 1000)
   }
 
    handleData = () => {
-    alert("Great Shot!");
+    
   }
 
   
@@ -23,7 +23,7 @@ class Header extends React.Component {
     return (
       <div>
               <h1>My Favorite Color is {this.state.favoritecolor}</h1>
-            <button onClick={this.handleData}>here</button>
+            <button  className='btn btn-primary' onClick={this.handleData}>button1</button>
       </div>
     );
   }
