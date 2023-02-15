@@ -1,20 +1,35 @@
+import React, { useState } from 'react'
+let stop1;
+const Clock = () => {
+  const [timer,setTimer] = useState(new Date().toLocaleTimeString())
+  
 
-import React from "react";
+const handleTime = () => {
+  stop1 = setInterval(()=> {
+   setTimer(new Date().toLocaleTimeString())
+},1000)
+}
 
-class Clock extends React.Component {
-  render(props) {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+const stopTimer1 = () => {
+  clearInterval(stop1)
+
+}
+  return (
+    <div className="container my-5" style={{backgroundColor:"skyblue",height:"40vh",width:"30%"}}>
+       <h2 className='py-2'>{timer}</h2>
+      <div className="row ">
+      <div className='col-6 mt-5'>
+<button className="btn btn-danger" onClick={handleTime} >Start Time</button>
+</div>
+<div className="col-6 mt-5">
+<button className="btn btn-primary" onClick={stopTimer1} >StopTime</button>
+</div>
+
+
+</div>
       </div>
-    );
-  }
+    
+  )
 }
 
-function tick() {
-  <Clock date={new Date()} />;
-}
-
-setInterval(tick, 1000);
-export default Clock;
+export default Clock
