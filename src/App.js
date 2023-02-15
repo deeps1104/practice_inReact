@@ -1,8 +1,12 @@
 import './App.css';
 import Count from './component/Count';
 import Example from './component/Example';
+import Example2 from './component/Example2';
 import File1 from './component/File1';
+import File2 from './component/File2';
 import Form from './component/Form';
+import Greet1 from './component/Greet1';
+import Map from './component/Map';
 import Clock from './component/Pages/Clock';
 import Clock1 from './component/Pages/Clock1';
 import Header from './component/Pages/Header';
@@ -21,14 +25,24 @@ import User from './component/User';
 function App() {
   return (
     <div className="App">
+      <Map/>
+      {/*       <Greet1 />
+ */}
+      <Clock/>
+      {/* <Clock1/>
+      <Example2/>
+      <File2/>
+      <Header/>
+      <Greet1/> */}
+      
       {/* <Practice1 name="Class Component tutorial" favcol="brown"/> */}
       {/* <Header/>
       <Practice /> */}
-      <File1/>
+      {/* <File1/>
        <Header/>
        <Clock1/>
        <Count/>
-       <Example/>
+       <Example/> */}
        {/* <Clock/> */}
 {/* <Login/>
 <Logout/>
