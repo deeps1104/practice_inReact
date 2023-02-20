@@ -1,4 +1,5 @@
 import './App.css';
+import Classlist from './component/Classlist';
 import Count from './component/Count';
 import Example from './component/Example';
 import Example2 from './component/Example2';
@@ -25,15 +26,20 @@ import User from './component/User';
 function App() {
   return (
     <div className="App">
-      <Map/>
-      {/*       <Greet1 />
+      <Classlist/>
+      <File2/>
+      
+      {/*      
  */}
-      <Clock/>
+      {/* <Clock/> */}
       {/* <Clock1/>
-      <Example2/>
       <File2/>
       <Header/>
-      <Greet1/> */}
+      <Greet1/> 
+      <Example2/>
+      
+       <Greet1 />
+      <Map/>*/}
       
       {/* <Practice1 name="Class Component tutorial" favcol="brown"/> */}
       {/* <Header/>
