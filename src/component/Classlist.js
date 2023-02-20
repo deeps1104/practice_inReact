@@ -31,6 +31,7 @@ export default class Classlist extends Component {
   render() {
     return ( 
       <div>
+         <h1>data</h1>
     <ul>
       <li>{this.state.data}</li>
     </ul>
