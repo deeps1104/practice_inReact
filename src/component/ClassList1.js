@@ -7,6 +7,7 @@ export default class ClassList1 extends Component {
   render() {
     return (
       <div> 
+        
       <div>{this.props.componentData.component}</div> 
       <div>{this.props.componentData.id}</div> 
    </div> 
